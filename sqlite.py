@@ -4,7 +4,7 @@ import sqlite3
 conn = sqlite3.connect('university.db')
 cur = conn.cursor()
 
-# Виконання SQL-запиту
+# SQL-запиту
 cur.execute("SELECT * FROM students")
 rows = cur.fetchall()
 
